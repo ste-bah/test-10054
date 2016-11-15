@@ -1,0 +1,6 @@
+*.swp
+*.terraform
+*.plan
+*.pem
+debug/.terraform/terraform.tfstate*
+init.txt
