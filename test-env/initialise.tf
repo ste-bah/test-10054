@@ -4,9 +4,6 @@
 ###
 
 
-#######################################################################
-## initialisation variables for Consul self healing autoscaing cluster
-###
 
 variable "vpc_id"								{ }
 variable "credentials_file"      				{ }
@@ -37,4 +34,16 @@ variable "bastion_name"                      	{ }
 variable "bastion_instance_type"             	{ }
 variable "bastion_bucket_name"            		{ }
 variable "ssh_public_key_names"			     	{ }
-					
+
+#### RDS MYSQL ####						
+variable "db_rds_instance_class"				{ }
+variable "db_rds_database_user"					{ }
+variable "db_rds_database_password"				{ }
+variable "db_rds_storage_type"					{ }
+variable "db_rds_is_multi_az"					{ }
+variable "db_rds_allocated_storage"				{ }
+variable "db_rds_engine_type"					{ }
+variable "db_rds_engine_version"				{ }
+variable "db_rds_database_name"					{ }
+variable "db_rds_instance_name"					{ }
+variable "db_rds_parameter_group"				{ }

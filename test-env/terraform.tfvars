@@ -32,3 +32,17 @@ consul_stack_name					= ""
 subnet_ids                          = ""
 route_id							= ""
 vpc_id   				        	= ""
+
+
+### MYSQL RDS DB ###
+db_rds_instance_class				= "db.t2.small"
+db_rds_database_user					= "test"
+db_rds_database_password				= "test1234"
+db_rds_storage_type					= "gp2"
+db_rds_is_multi_az					= "true"
+db_rds_allocated_storage			= "20"
+db_rds_engine_type					= "mysql"
+db_rds_engine_version				= "5.7.11"
+db_rds_database_name					= "testing"
+db_rds_instance_name				= "testing-terraform"
+db_rds_parameter_group				= "default.mysql5.7"

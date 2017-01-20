@@ -47,16 +47,5 @@ variable "pri_offset"       { }
 # Default is to create 3 private subnets (assumes /20s) begining at the
 # bottom of the range.
 
-variable "vpc_id"          { }
-variable "igw_id"          { }
 
 variable "nat_gateways_count"  { }
-
-
-variable "private_subnet_ids"   { }
-variable "private_subnet_cidrs" { }
-
-variable "public_subnet_ids"   { }
-variable "public_subnet_cidrs" { }
-
-#variable "vpc_private_dns_record"						{ }
