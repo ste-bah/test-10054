@@ -52,7 +52,7 @@ resource "aws_db_instance" "main_rds_instance" {
     storage_type = "${var.rds_storage_type}"
 
           tags {
-        Name         = "${var.env}-${rds_instance_name}-DB-Instance-${count.index}"
+        Name         = "${var.env}-${var.rds_instance_name}-DB-Instance-${count.index}"
         VPC          = "${var.vpc_name}"
         ManagedBy    = "terraform"
         env  = "${var.env}"
